@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .container {
+    width: 70%;
+    max-width: 1140px;
+    margin: auto;
+}
+
+.banner {
+    padding: 3rem;
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.banner:hover {
+    cursor: pointer;
+    background-color: rgb(17, 154, 240);
+}
+
+.banner:hover h1 {
+    color: yellow;
+} */
+
+.red {
+    width: 600px;
+    height: 400px;
+    background-color: red;
+    position: relative;
+}
+
+.square {
+    height: 50px;
+    width: 50px;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+}
+
+.purple {
+    background-color: purple;
+    position: absolute;
+    top: 0;
+    right: 0;
+}

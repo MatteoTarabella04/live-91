@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo img {
+    height: 30px;
+    vertical-align: middle;
+}
+
+ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    line-height: 60px;
+    padding: 0 0.5rem;
+}
+
+#app-header {
+    height: 60px;
+    background-color: lightgray;
+    text-align: center;
+    position: fixed;
+    left:0;
+    top: 0;
+    width: 100%;
+}
+
+#app-main {
+    margin-top: 75px;
+}

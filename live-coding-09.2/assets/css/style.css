@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    height: 100vh;
+    position: relative;
+}
+
+section h2 {
+    font-size: 3rem;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+    text-transform: uppercase;
+}
+
+#roma {
+    background-image: url('https://static2-viaggi.corriereobjects.it/wp-content/uploads/2015/06/roma-getty.jpg?v=133898');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#napoli {
+    background-image: url('https://tourismmedia.italia.it/is/image/mitur/1600X1000_itinerario_diecimila_passi_napoli_hero?qlt=82&ts=1665991935953&dpr=off');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#milano {
+    background-image: url('https://www.yesmilano.it/sites/default/files/articolo/copertina/6143/22465/Copertina-milano-at-a-glance-ph-photophonico.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.overlay {
+    height: 100%;
+    background-color: #0000007d;
+}

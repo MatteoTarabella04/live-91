@@ -1,0 +1,40 @@
+/* #region */
+
+/* h1.title {
+    color: red;
+}
+ */
+/* .title {
+    color: red;
+} */
+/* 
+input[type="submit"]{
+    border: none;
+    
+} */
+/* --------------------------------------------------------------- */
+/* div p {
+    color: red;
+}
+a:hover{
+    text-decoration: none;
+    background-color: yellow    ;
+} */
+
+/* div>strong{
+    color: blue;
+} */
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    background-color: red;
+}
+
+div + p {
+    color: green;
+} */
+/* #endregion */
