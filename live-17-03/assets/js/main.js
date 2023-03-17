@@ -15,7 +15,7 @@ Generare griglia con 64 celle
 
 const containerElement = document.querySelector('.container');
 
-for (let i = 0; i < 64; i++) {
+for (let i = 0; i < 110; i++) {
    const cellMarkup = `<div class="cell"></div>`;
 
    containerElement.insertAdjacentHTML('beforeend', cellMarkup);

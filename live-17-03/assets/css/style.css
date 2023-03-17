@@ -18,7 +18,7 @@ body {
 }
 
 .cell {
-   width: calc(100% / 8);
+   width: calc(100% / 11);
    aspect-ratio: 1;
    border: 1px solid white;
 }
