@@ -32,9 +32,8 @@ for (let i = 0; i < films.length; i++) {
    console.log(thisMovie);
    const markupEl = `
    <div>
+      <h2>${thisMovie.title}</h2>
       <img src="${thisMovie.img}">
-      
-      <p>${thisMovie.title}</p>
    </div>`;
 
    containerEl.innerHTML += markupEl;
