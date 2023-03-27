@@ -1,5 +1,59 @@
-* {
-   box-sizing: border-box;
-   padding: 0;
-   margin: 0;
+body {
+   font-family: sans-serif;
+}
+
+header h1 {
+   font-size: 4rem;
+   font-weight: 900;
+}
+
+#products {
+   max-width: 1200px;
+   width: 80%;
+   margin: 4rem auto;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1rem;
+
+}
+
+img {
+   max-width: 100%;
+}
+
+.product {
+   text-align: center;
+   width: calc(100% / 3 - 1rem);
+   padding: 1rem;
+   border: 1px solid gainsboro;
+   position: relative;
+   box-shadow: 0 0 10px rgb(187, 186, 186);
+   border-radius: 0.75rem;
+}
+
+.product .price {
+   position: absolute;;
+   top: 1rem;
+   right: 1rem;
+   background-color: red;
+   border-radius: 1rem;
+   padding: 0.5rem;
+   font-size: 0.8rem;
+   color: white;
+}
+
+.product img {
+   border-top-right-radius: 0.75rem;
+   border-top-left-radius: 0.75rem;
+   height: 300px;
+   object-fit: cover;
+}
+
+.product button {
+   display: block;
+   width: 100%;
+   border: none;
+   border-radius: 0.5rem;
+   background-color: black;
+   color: white;
 }
