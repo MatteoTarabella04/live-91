@@ -57,3 +57,15 @@ img {
    background-color: black;
    color: white;
 }
+
+.cart-wrapper {
+   position: fixed;
+   top: 1rem;
+   right: 1rem;
+   border: 1px solid;
+   border-radius: 0.70rem;
+   background-color: rgb(255, 255, 255, 0.765);
+   padding: 0.25rem;
+   z-index: 1;
+
+}

@@ -79,9 +79,21 @@ Products.forEach(prod => {
 
 const btnElements = document.querySelectorAll('.product button');
 
+let sum = 0;
 btnElements.forEach(btn => {
-   btn.addEventListener('click', () => {
-      console.log(btn);
+   btn.addEventListener('click', function(){
+      //console.log(btn);
+
+      const productName = btn.getAttribute('data-product-name')
+      const productPrice = btn.getAttribute('data-product-price');
+
+      console.log(productName, productPrice);
+
+      sum += parseFloat(productPrice);
+
+      document.querySelector('.cart').insertAdjacentHTML('beforeend', `<li>${productName} ${productPrice}</li>`)
+
+      document.querySelector('.total').innerHTML = `<strong>Total: € ${sum.toFixed(2)}</strong>`
    })
 })
 
