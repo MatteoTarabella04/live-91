@@ -1,62 +1,3 @@
-const mario_person = {
-   name: '',
-   lastname: '',
-   mail: ''
-
-};
-
-const user = {
-   name: '',
-   lastname: '',
-   mail: ''
-
-};
-
-const my_product = {
-   name: '',
-   image: '',
-   description: ''
-
-};
-
-console.log(user);
-
-
-
-const users = [
-   {
-      name: '',
-      image: '',
-      description: '',
-      phone_number: ''
-   },
-   {
-      name: '',
-      image: '',
-      description: '',
-      phone_number: ''
-   },
-   {
-      name: '',
-      image: '',
-      description: '',
-      phone_number: ''
-   },
-   {
-      name: '',
-      image: '',
-      description: '',
-      phone_number: ''
-   },
-   {
-      name: '',
-      image: '',
-      description: '',
-      phone_number: ''
-   }
-];
-
-
 /*
 classes
 
@@ -79,35 +20,11 @@ const ClassName_2 = class {
 }
 // posso usarla solo dopo la pdichiarazione
 
-class Person {
-
-}
-
-const pippo = new Person();
-
-/* console.log(pippo);
-console.log(mario_person); */
-
-
-
-/* class Product {
-   name = 'Vertical Mouse'
-   description = 'lorem ipsum'
-   in_stock = false
-}
-
-const ssd = new Product()
-const monitor = new Product()
-
-console.log(ssd);
-console.log(monitor); */
-
 /*  Magic function constructor */
 class Product {
    //name = 'Vertical Mouse'
    //description = 'lorem ipsum'
    in_stock = false
-
 
    /**
     * 
@@ -132,17 +49,6 @@ class Product {
    }
 
 }
-
-
-/* const ssd = new Product('SSD 1TB', 'Super fast ssd drive', 60, 'Pc hardware', 120)
-const monitor = new Product('AOC Monitor', 'Studio monitor', 149.99, 'Monitors / TV')
-
-console.log(ssd);
-console.log(monitor);
-
-ssd.addLikes()
-console.log(ssd); */
-
 
 const Products = [
    new Product('SSD 1TB Crucial Disk', 'Super fast SSD drive', 49.99, 'PC Hardware', './assets/img/ssd.jpg'),
