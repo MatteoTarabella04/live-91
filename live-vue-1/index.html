@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang='en'>
+   <head>
+      <meta charset='UTF-8'>
+      <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+      <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+      <!-- myStyle -->
+      <!-- <link rel='stylesheet' href='./assets/css/style.css'> -->
+      <title>VUE</title>
+   </head>
+   <body>
+
+      <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+      
+      <div id="app">
+
+         <header id="site_header" :class="active">
+            <h1>VUE JS</h1>
+         </header>
+
+         <main>
+
+            {{ message }}
+
+            Name
+            <label>
+               <input type="text" v-model="firstName">
+            </label>
+
+            Lastname
+            <label>
+               <input type="text" v-model="lastName">
+            </label>
+
+            <p>Ciao, {{firstName}} {{lastName}}</p>
+         </main>
+
+      </div>
+
+      <!-- myScript -->
+      <script src='main.js'></script>
+   </body>
+</html>
