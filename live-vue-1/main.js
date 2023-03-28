@@ -7,6 +7,7 @@ createApp({
          fisrtName: '',
          lastName: '',
          active: 'is_active',
+         counter: 0,
       }
    },
    methods: {
@@ -15,6 +16,9 @@ createApp({
       },
       greetings: function(){
          console.log('Hello');
+      },
+      resetCounter(){
+         this.counter = 0;
       }
    }
 }).mount('#app')

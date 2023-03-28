@@ -21,10 +21,10 @@
 
          <main>
 
-            // show message 
+            <!-- show message  -->
             {{ message }}
 
-            // get inputs and show on a paragraph
+            <!-- get inputs and show on a paragraph -->
             Name
             <label>
                <input type="text" v-model="firstName">
@@ -35,12 +35,16 @@
                <input type="text" v-model="lastName">
             </label>
 
-            // p with inputs 
+            <!-- p with inputs --> 
             <p>Ciao, {{firstName}} {{lastName}}</p>
             
-            // buttons on click generate a c.log with some text
+            <!-- buttons on click generate a c.log with some text -->
             <button @click="sayHi">Hi</button>
-            <button @click="greetings">Hello</button>
+            <button @click="greetings">Hello</button><br><br>
+            <h4>Counter</h4>
+            <button @click="counter++">Add 1</button>
+            <p>The button has been clicked for {{counter}} times</p>
+            <button @click="resetCounter">Reset Counter</button>
          </main>
 
       </div>
