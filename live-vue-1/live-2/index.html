@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang='en'>
+   <head>
+      <meta charset='UTF-8'>
+      <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+      <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+      <!-- myStyle -->
+     <!--  <link rel='stylesheet' href='./assets/css/style.css'> -->
+     <style>
+         body {
+            font-family: sans-serif;
+         }
+         .py-4 {
+            padding: 4rem 0.5rem;
+         }
+         .content {
+            font-size: 1.5rem;
+            background-color: red;
+            color: white;
+         }
+     </style>
+      <title></title>
+   </head>
+   <body>
+
+      <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+      <div id="app">
+         <h1>{{ message }}</h1>
+         <div :class="contentStyle" class="py-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repudiandae tempora nobis voluptatibus veniam voluptates recusandae provident error aut ipsam, eius qui blanditiis unde consectetur inventore quidem delectus magnam. Molestiae.
+         </div>
+      </div>
+      
+      <!-- myScript -->
+      <script src='main.js'></script>
+   </body>
+</html>
