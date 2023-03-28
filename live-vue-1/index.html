@@ -11,17 +11,20 @@
    <body>
 
       <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-      
+
       <div id="app">
 
+         // add is_active to header
          <header id="site_header" :class="active">
             <h1>VUE JS</h1>
          </header>
 
          <main>
 
+            // show message 
             {{ message }}
 
+            // get inputs and show on a paragraph
             Name
             <label>
                <input type="text" v-model="firstName">
@@ -32,7 +35,12 @@
                <input type="text" v-model="lastName">
             </label>
 
+            // p with inputs 
             <p>Ciao, {{firstName}} {{lastName}}</p>
+            
+            // buttons on click generate a c.log with some text
+            <button @click="sayHi">Hi</button>
+            <button @click="greetings">Hello</button>
          </main>
 
       </div>

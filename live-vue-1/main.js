@@ -8,5 +8,13 @@ createApp({
          lastName: '',
          active: 'is_active',
       }
+   },
+   methods: {
+      sayHi(){
+         console.log('Hi');
+      },
+      greetings: function(){
+         console.log('Hello');
+      }
    }
 }).mount('#app')
