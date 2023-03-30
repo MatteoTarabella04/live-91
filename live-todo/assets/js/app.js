@@ -27,6 +27,7 @@ createApp({
       return {
          newTask: '',
          error: null,
+         completed: [],
          tasks: [
             'Learn HTML',
             'Learn CSS',
@@ -36,7 +37,7 @@ createApp({
       }
    },
    methods: {
-      addTasks(){
+      addTasks() {
          console.log('added');
          console.log(this.newTask);
 
@@ -47,7 +48,11 @@ createApp({
          } else {
             this.error = 'La task deve contenere almeno 5 caratteri'
          }
-         
+
+      },
+      completeTask(i) {
+         this.completed.push(this.tasks[i])
+         this.tasks.splice(i, 1)
       }
    }
 }).mount('#app');
