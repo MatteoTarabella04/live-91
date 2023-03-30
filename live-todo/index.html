@@ -11,13 +11,30 @@
    <body>
 
       <div id="app">
-         
+
+         <header>
+            <h1>TodoList</h1>
+         </header>
+
+         <main>
+            <div class="tasks">
+               <ul>
+                  <li v-for="task in tasks">
+                     {{task}}
+                  </li>
+
+               </ul>
+            </div>
+         </main>
+
+         <footer></footer>
       </div>
       <!-- /#app -->
 
-      <!-- myScript -->
-      <script src='./assets/js/app.js'></script>
       <!-- VueJs -->
       <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>
+      <!-- myScript -->
+      <script src='./assets/js/app.js'></script>
+
    </body>
 </html>
