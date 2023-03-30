@@ -25,13 +25,29 @@ const { createApp } = Vue
 createApp({
    data() {
       return {
+         newTask: '',
+         error: null,
          tasks: [
             'Learn HTML',
             'Learn CSS',
             'Learn JS',
             'Learn PHP',
-            
          ]
+      }
+   },
+   methods: {
+      addTasks(){
+         console.log('added');
+         console.log(this.newTask);
+
+         if (this.newTask.length >= 5) {
+            this.tasks.unshift(this.newTask);
+            this.newTask = ''
+            this.error = null;
+         } else {
+            this.error = 'La task deve contenere almeno 5 caratteri'
+         }
+         
       }
    }
 }).mount('#app');
