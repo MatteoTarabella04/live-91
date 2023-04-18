@@ -6,6 +6,7 @@ export const store = reactive({
    API_URL: 'https://rickandmortyapi.com/api/character',
    characters: null,
    info: null,
+   searchText: '',
    callApi(url) {
       axios
          .get(url)
